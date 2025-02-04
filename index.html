@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Image/icon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div class="contenedor-formulario iniciar-sesion">
+        <div class="seccion-info">
+            <div class="contenido-info">
+                <h2>Bienvenido</h2>
+                <p>¿Aún no estás registrado?</p>
+                <input type="button" value="Registrarse" id="registrarse">
+            </div>
+        </div>
+
+
+        <div class="seccion-formulario">
+            <div class="contenido-formulario">
+                <h2>Iniciar sesión</h2>
+                <p>Por favor, inicia sesión con tus datos</p>
+                
+                <form id="loginForm" class="formulario-usuario">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="text" id="correo" placeholder="Correo electrónico" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="contrasena" placeholder="Contraseña" required>
+                    </label>
+                    <p id="mensaje-error"></p>
+                    <input type="submit" value="Iniciar sesión">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contenedor-formulario registrar ocultar">
+        <div class="seccion-info">
+            <div class="contenido-info">
+                <h2>Bienvenido</h2>
+                <p>¿Quieres iniciar sesión?</p>
+                <input type="button" value="Iniciar sesión" id="iniciar-sesion">
+            </div>
+        </div>
+
+
+        <div class="seccion-formulario">
+            <div class="contenido-formulario">
+                <h2>Crear una cuenta</h2>
+                <p>Usa tu email para registrarte</p>
+                
+                <form class="formulario-usuario">
+                    <label>
+                        <i class='bx bx-envelope'></i>
+                        <input type="text" placeholder="Correo electrónico">
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" placeholder="Contraseña">
+                    </label>
+                    <input type="button" value="Registrarse">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
